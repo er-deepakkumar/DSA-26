@@ -1,6 +1,12 @@
 #include<iostream>
 using namespace std;
-int main()
-printf(
-    "jdlfasjdf"
-)
+int main(){
+    long long n,f;
+    cin>>n >>f;
+    if(n%f==0){
+        cout<<"Yes"<<endl;
+    }
+    else{
+        cout<<"No"<<endl;
+    }
+}
