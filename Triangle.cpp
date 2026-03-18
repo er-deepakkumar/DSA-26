@@ -3,6 +3,6 @@ using namespace std;
 int main(){
     long n;
     if(!(cin>>n))return 0;
-    for(int i; i)
-    return 0
+    cout<<"hi";
+    return 0;
 }
