@@ -23,7 +23,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
         // 1. Print leading spaces: exactly n-i spaces
         for (int j = 1; j <= n - i; j++) {
-            cout << "0";
+            cout << " ";
         }
 
         // 2. Print stars with a single space between them
@@ -38,4 +38,4 @@ int main() {
     }
     return 0;
 }
-// 
+
