@@ -3,42 +3,46 @@
 // int main(){
 //     int n=4;
 //     for(int i=0;i<n;i++){
-//         for(int j=0;j<n-1-i;j++){
-//             cout<<"*";
+//         for(int j=0;j<n-i-1;j++){
+//             cout<<" ";
 //         }
+//         cout<<"*";
 //         cout<<endl;
+//         if i==0:
+//         else if 
+        
 //     }
+    
 // }
-#include<iostream>
+
+#include <iostream>
 using namespace std;
 
-int main(){
+int main() {
     int n;
     cin >> n;
-    
-    for(int i = 0; i < n; i++){
-        
-        // leading spaces
-        for(int j = 0; j < n-i-1; j++){
+
+    for (int i = 1; i <= n; i++) {
+        // 1. Leading spaces
+        for (int j = 1; j <= n - i; j++) {
             cout << " ";
         }
-        
-        // first star
-        cout << "*";
-        
-        if(i == n-1){
-            // last row: all stars with spaces
-            for(int j = 1; j < n; j++){
-                cout << " *";
+
+        // 2. Stars and Internal Spaces
+        for (int j = 1; j <= i; j++) {
+            // Print star if: first col, last col, or last row
+            if (j == 1 || j == i || i == n) {
+                cout << "* ";
+            } else {
+                cout << "  "; // Two spaces to match the "* " width
             }
-        } else if(i != 0){
-            // middle rows: gap then second star
-            for(int j = 0; j < 2*i-1; j++){
-                cout << " ";
-            }
-            cout << "*";
         }
-        
         cout << endl;
     }
+    return 0;
+
+
+
+
+    
 }
