@@ -3,8 +3,7 @@ using namespace std;
 int main(){
     int decNum;
     cin>>decNum;
-    int ans=0;
-    int power=1;
+    int ans=0;int power=1;
     while (decNum>0)
     {
         int rem=decNum%2;
