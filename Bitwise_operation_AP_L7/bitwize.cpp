@@ -8,9 +8,15 @@ int main(){
     // bitwize or (|)
     // bitwize xor (^)
     // bitwize << (left shift operator)
-    // cout<<(4<<1);
+    // cout<<(4<<1); 
+    // -> formula to validate a*2^b
 
     // bitwize >> (right shift operator)
-    cout<<(4>>1);
+    // cout<<(4>>1);
+    //  // -> formula to validate a/2^b
 
+
+
+    // exercise
+    cout<<(6^1);
 }
