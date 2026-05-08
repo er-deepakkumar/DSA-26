@@ -18,5 +18,5 @@ int main(){
 
 
     // exercise
-    cout<<(6^1);
+    cout<<(6^2);
 }
